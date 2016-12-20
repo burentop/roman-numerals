@@ -5,27 +5,22 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Bases</title>
+    <title>Roman Numerals</title>
   </head>
   <body>
     <div class="container">
-      <h1>Convert a base-n number to base-10</h1>
-      <h3>Enter the number, and then the base:</h3>
-      <form id="base-calc">
+      <h1>Convert a number to a roman numeral:</h1>
+      <form id="roman">
         <div class="form-group">
-          <label for="number">Number to be evaluated:</label>
+          <label for="number">Number to be converted:</label>
           <input id="number" type="text">
-        </div>
-        <div class="form-group">
-          <label for="base">Base to be evaluated by:</label>
-          <input id="base" type="text">
         </div>
         <button type="submit" class="btn">Convert</button>
       </form>
 
       <div id="result">
-        <h2><span id="output-original"></span> in decimal is:</h2>
-        <h2 id="output-decimal"></h2>
+        <h2><span id="output-original"></span> in roman numerals is:</h2>
+        <h2 id="output-roman"></h2>
       </div>
     </div>
   </body>
