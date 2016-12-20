@@ -21,8 +21,13 @@ _This is a very simple website used to convert numbers to roman numerals._
 * _Return number, ignoring 3-in-a-row rule._
   * _Input Example: 4_
   * _Output Example: iiii_
-  * _Input Example: 5_
-  * _Output Example: v_
+  * _Input Example: 9_
+  * _Output Example: iiiiiiiii_
+* _Return number using largest divisor._
+  * _Input Example: 6_
+  * _Output Example: vi_
+  * _Input Example: 19_
+  * _Output Example: xiiiiiiiii_ 
 * _Return number using prefix subtraction, but ignoring tens/hundreds/etc._
   * _Input Example: 99_
   * _Output Example: ic_
