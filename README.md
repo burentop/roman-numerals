@@ -13,6 +13,11 @@ _This is a very simple website used to convert numbers to roman numerals._
 * _Return number using only 'i'._
   * _Input Example: 6_
   * _Output Example: iiiiii_
+* _Return number when exact match is submitted._
+  * _Input Example: 5_
+  * _Output Example: v_
+  * _Input Example: 10_
+  * _Output Example: x_
 * _Return number, ignoring 3-in-a-row rule._
   * _Input Example: 4_
   * _Output Example: iiii_
@@ -23,7 +28,7 @@ _This is a very simple website used to convert numbers to roman numerals._
   * _Output Example: ic_
 * _Return proper number._
   * _Input Example: 99_
-  * _Output Example: xcix_ 
+  * _Output Example: xcix_
 
 ## Setup/Installation Requirements
 
