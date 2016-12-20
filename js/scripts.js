@@ -1,3 +1,5 @@
+var output = "";
+
 var numberMap = {
   1000: 'M',
   500: 'D',
@@ -19,14 +21,25 @@ var findBiggest = function(number) {
 }
 
 var convertNumber = function(number) {
-  if (numberMap[number]) {
-    return numberMap[number];
-  } else if (number > 4) {
-    var large = findBiggest(number);
-    return numberMap[large] + "I".repeat(number % large);
+  var workingNumber = number;
+  if (numberMap[workingNumber]) {
+    output += numberMap[workingNumber];
+  } else if (workingNumber > 4) {
+    var large = findBiggest(workingNumber);
+    var icount = workingNumber % large;
+    if (icount > 3) {
+      output += numberMap[large];
+      console.log(output);
+      workingNumber = workingNumber % large;
+      console.log(workingNumber);
+      convertNumber(workingNumber);
+    } else {
+      output += numberMap[large] + "I".repeat(workingNumber % large);
+    }
   } else {
-    return "I".repeat(number);
+    output += "I".repeat(workingNumber);
   }
+  return output;
 }
 
 $(document).ready(function() {
