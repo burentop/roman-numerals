@@ -1,31 +1,29 @@
-# _bases_
+# _roman-numerals_
 
-#### _Simple web page to turn base-n numbers into base-10, 12.19.2016_
+#### _Simple web page to turn numbers into roman numerals, 12.20.2016_
 
 #### By _**Brent Perry**_
 
 ## Description
 
-_This is a very simple website used to convert numbers to base-10._
+_This is a very simple website used to convert numbers to roman numerals._
 
 # Specs
 
-* _Return number unconverted._
-  * _Input Example: 11 -- 2_
-  * _Output Example: 11_
-* _Return binary number converted to base-10._
-  * _Input Example: 11 -- 2_
-  * _Output Example: 3_
-* _Return ternary number converted to base-10._
-  * _Input Example: 12 -- 3_
-  * _Output Example: 5_
-* _Return any number up to base-8._
-  * _Input Example: 134 -- 4_
-  * _Output Example: 32_
-* _Return hexadecimal number converted to base-10._
-  * _Input Example: f -- 16_
-  * _Output Example: 15_
-
+* _Return number using only 'i'._
+  * _Input Example: 6_
+  * _Output Example: iiiiii_
+* _Return number, ignoring 3-in-a-row rule._
+  * _Input Example: 4_
+  * _Output Example: iiii_
+  * _Input Example: 5_
+  * _Output Example: v_
+* _Return number using prefix subtraction, but ignoring tens/hundreds/etc._
+  * _Input Example: 99_
+  * _Output Example: ic_
+* _Return proper number._
+  * _Input Example: 99_
+  * _Output Example: xcix_ 
 
 ## Setup/Installation Requirements
 
